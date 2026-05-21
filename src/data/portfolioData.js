@@ -52,10 +52,42 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = {
-  Languages: ['Python', 'JavaScript ES6+', 'C++', 'C', 'HTML5', 'CSS3', 'SQL'],
-  'Web / MERN': ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'WebRTC', 'WebSockets', 'GSAP'],
-  'Data & AI': ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Power BI', 'Advanced Excel', 'Scikit-learn'],
-  Tools: ['Git / GitHub', 'Render CI/CD', 'Cloudinary', 'Jupyter', 'GPT-4', 'Ollama', 'VS Code'],
+  Languages: [
+    { name: 'JavaScript ES6+', level: 92, icon: '⚡' },
+    { name: 'Python', level: 85, icon: '🐍' },
+    { name: 'C++', level: 75, icon: '⚙️' },
+    { name: 'C', level: 72, icon: '🔧' },
+    { name: 'HTML5', level: 95, icon: '🌐' },
+    { name: 'CSS3', level: 90, icon: '🎨' },
+    { name: 'SQL', level: 80, icon: '🗄️' },
+  ],
+  'Web / MERN': [
+    { name: 'React.js', level: 90, icon: '⚛️' },
+    { name: 'Node.js', level: 88, icon: '🟢' },
+    { name: 'Express.js', level: 86, icon: '🚀' },
+    { name: 'MongoDB', level: 84, icon: '🍃' },
+    { name: 'WebRTC', level: 76, icon: '📡' },
+    { name: 'WebSockets', level: 78, icon: '🔌' },
+    { name: 'GSAP', level: 80, icon: '✨' },
+  ],
+  'Data & AI': [
+    { name: 'Pandas', level: 88, icon: '🐼' },
+    { name: 'NumPy', level: 86, icon: '🔢' },
+    { name: 'Scikit-learn', level: 78, icon: '🤖' },
+    { name: 'Power BI', level: 82, icon: '📊' },
+    { name: 'Matplotlib', level: 80, icon: '📈' },
+    { name: 'Seaborn', level: 76, icon: '🎭' },
+    { name: 'Advanced Excel', level: 85, icon: '📋' },
+  ],
+  Tools: [
+    { name: 'Git / GitHub', level: 92, icon: '🔀' },
+    { name: 'VS Code', level: 95, icon: '💻' },
+    { name: 'Render CI/CD', level: 80, icon: '🔄' },
+    { name: 'Cloudinary', level: 78, icon: '☁️' },
+    { name: 'Jupyter', level: 85, icon: '📓' },
+    { name: 'GPT-4', level: 88, icon: '🧠' },
+    { name: 'Ollama', level: 75, icon: '🦙' },
+  ],
 };
 
 export const EXPERIENCE = [
