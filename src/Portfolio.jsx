@@ -178,13 +178,6 @@ function SkillOrb({ skill, delay = 0 }) {
       }}>
         {skill.name}
       </span>
-
-      <motion.div
-        initial={{ scaleX: 0, opacity: 0 }}
-        whileHover={{ scaleX: 1, opacity: 1 }}
-        transition={{ duration: 0.25 }}
-        style={{ width: '40px', height: '1.5px', background: categoryColor.stroke || '#1a1a1a', borderRadius: '2px', transformOrigin: 'center' }}
-      />
     </motion.div>
   );
 }
@@ -264,24 +257,6 @@ function SkillsSection() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: '1.8rem 1.2rem' }}>
             {SKILLS[activeTab].map((skill, index) => (
               <SkillOrb key={skill.name} skill={{ ...skill, catColor: CAT_META[activeTab] }} delay={index * 0.06} />
-            ))}
-          </div>
-
-          <div style={{ marginTop: '3rem', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {SKILLS[activeTab].map((skill, index) => (
-              <div key={skill.name} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.65rem', color: '#888', width: '130px', flexShrink: 0, letterSpacing: '0.04em' }}>{skill.name}</span>
-                <div style={{ flex: 1, height: 4, background: 'rgba(0,0,0,0.06)', borderRadius: '4px', overflow: 'hidden' }}>
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1.1, delay: index * 0.07 + 0.2, ease: [0.22, 1, 0.36, 1] }}
-                    style={{ height: '100%', background: CAT_META[activeTab].color, borderRadius: '4px' }}
-                  />
-                </div>
-                <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.6rem', color: CAT_META[activeTab].color, width: '32px', textAlign: 'right' }}>{skill.level}%</span>
-              </div>
             ))}
           </div>
         </motion.div>
