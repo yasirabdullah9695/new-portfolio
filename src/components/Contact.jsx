@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 const contactItems = [
   { label: 'Email', val: 'yasirsabdullah02@gmail.com', href: 'mailto:yasirsabdullah02@gmail.com' },
   { label: 'Phone', val: '+91 9669397762', href: 'tel:+919669397762' },
-  { label: 'LinkedIn', val: 'linkedin.com/in/yasir', href: 'https://linkedin.com/in/yasirsabdullah02' },
-  { label: 'GitHub', val: 'github.com/yasir', href: 'https://github.com/yasirsabdullah02' },
+  { label: 'LinkedIn', val: 'linkedin.com/in/yasir', href: 'https://www.linkedin.com/in/yasir-abdullah-655314313/
+' },
+  { label: 'GitHub', val: 'github.com/yasir', href: 'https://github.com/yasirabdullah9695' },
 ];
 
 export default function Contact() {
